@@ -1,0 +1,43 @@
+// ConsoleApplication15.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <cstdlib>
+#include <iostream>
+#include <iomanip>
+
+
+using namespace std;
+
+int main()
+{
+	int choice;
+
+
+	do {
+		cout << setw(10) << "1 adult gym\n";4
+		cout << "2 kid gym\n";
+		cout << "3 seinor citizen gym\n";
+		cout << "4 exit the menu\n";
+		cout << " please enter a number from the menu\n";
+		cin >> choice;
+		cout << "\n";
+
+
+		switch (choice)
+		{
+		case 1: cout << "adult gym";
+			break;
+		case 2:cout << "kid gym";
+			break;
+		case 3:cout << "seinor citizen gym";
+			break;
+		case 4:cout << " exit the menu";
+			break;
+		default: cout << "please enter a number from the menu";
+		}
+	}
+
+	while (choice != 4);
+	return 0;
+}
